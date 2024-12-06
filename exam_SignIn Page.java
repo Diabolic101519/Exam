@@ -19,7 +19,7 @@ public class SignIn {
          driver.get("https://datacom.com/nz/en/contact-us");
          Thread.sleep(3000);
         // click on button with the id "Sign In Button"
-         WebElement button = driver.findElement(By.By.cssSelector("button[data-test-id='sign-in']"));
+         WebElement button = driver.findElement(By.cssSelector("button[data-test-id='sign-in']"));
          button.click();
          // get sing in title
          title = driver.findElement(By.xpath("/html/body/div[2]/div/div[2]/div/div[2]/div/div[1]/div/h2"));
